@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Phan Văn Tuấn"
+    android:textColor="#0C0C0C"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="28sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/td"
+        android:textColor="#130202"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/td"
+        android:layout_marginStart="20dp" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/td"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:id="@+id/t"
+        android:textSize="20sp"
+        android:textColor="#E91E63"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_below="@id/image"/>
+    <LinearLayout
+        android:id="@+id/bt"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/fb"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/tw"
+            android:layout_marginStart="20dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_below="@id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login_with_email"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#1938E8"/>
+    <Button
+        android:id="@+id/bt2"
+        android:background="@drawable/bgrbt"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvEmail"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        android:textColor="#FFF"/>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you"/>
+        <Button
+            android:background="#FFF"
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout >

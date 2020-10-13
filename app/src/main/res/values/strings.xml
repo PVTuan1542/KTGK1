@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">KTGK</string>
+    <string name="welcome">Welcome</string>
+    <string name="td">Please login or sigh up to contunue using our app</string>
+    <string name="todo">TODO</string>
+    <string name="name">Enter via Social Networks</string>
+    <string name="or_login_with_email">or login with email</string>
+    <string name="you">You already have an account ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="n">Please registration with email and sign up to continue our app</string>
+    <string name="enter_via_social_networds">Enter via Social Networds</string>
+    <string name="uesr_name">Uesr name</string>
+    <string name="pass_word">Pass word</string>
+    <string name="i_agree_privacy_policy">I agree privacy policy</string>
+    <string name="login">Login</string>
+    <string name="please_login_to_continue_using_our_app">Please login to continue using our app</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="signup">sign up</string>
+</resources>

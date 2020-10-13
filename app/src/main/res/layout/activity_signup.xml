@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="28sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:id="@+id/td"
+        android:textColor="#130202"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n"
+        android:layout_marginStart="20dp" />
+    <TextView
+        android:layout_below="@id/td"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_via_social_networds"
+        android:textSize="24sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/bt"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/fb"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/tw"
+            android:layout_marginStart="20dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_below="@id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login_with_email"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#1938E8"/>
+
+    <EditText
+        android:id="@+id/ten"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:hint="@string/uesr_name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/tvEmail"
+        android:background="@drawable/bgrbt"
+        android:textSize="16sp"
+        android:autofillHints=""
+
+        />
+    <EditText
+
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:hint="@string/pass_word"
+        android:inputType="textPersonName"
+        android:layout_below="@id/ten"
+        android:background="@drawable/bgrbt"
+        android:textSize="16sp"
+        android:autofillHints=""
+        />
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_agree_privacy_policy"
+        android:layout_marginStart="40dp" />
+    <Button
+        android:id="@+id/bt2"
+        android:background="@drawable/bgrbt"
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cb"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:textSize="18sp"
+        android:textColor="#FFF"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you"/>
+        <Button
+            android:background="#FFF"
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
